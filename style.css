@@ -1,0 +1,80 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+  }
+  
+  /* 🌐 Navegação */
+  .nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #72b8f5;
+    padding: 8px 16px;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav img {
+    height: 70px;
+    margin-right: 1px;
+  }
+  
+  .nav a {
+    display: block;
+    padding: 1px 1px;
+    text-decoration: none;
+    color: #2c3e50; /* cinza escuro/azulado */
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    background-color: #cde4f7; /* azul bem claro no hover */
+    color: #0077b6; /* azul suave */
+  }
+  
+  /* Dropdown */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e3eaf0;
+    list-style: none;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  .dropdown-menu li {
+    margin: 4px 0;
+  }
+  
+  .dropdown-menu a {
+    color: #2c3e50;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+  
+  .nav-item:hover .dropdown-menu {
+    display: block;
+  }
