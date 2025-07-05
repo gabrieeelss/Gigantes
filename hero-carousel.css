@@ -66,12 +66,14 @@
 .hero-text {
   flex: 1 1 30%;
   max-width: 400px;
-  text-align: left;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
 }
 
 .hero-text h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  
 }
 
 .hero-text p {
@@ -122,3 +124,18 @@
   height: auto;
   display: block;
 }
+
+.img-neon-svg {
+  animation: neonPulse 1.5s infinite alternate;
+  filter: drop-shadow(0 0 5px #0ff);
+}
+
+@keyframes neonPulse {
+  0% {
+    filter: drop-shadow(0 0 5px #0ff) drop-shadow(0 0 10px #0ff);
+  }
+  100% {
+    filter: drop-shadow(0 0 15px #0ff) drop-shadow(0 0 30px #0ff);
+  }
+}
+

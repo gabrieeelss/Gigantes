@@ -26,7 +26,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
-  padding: 0.5rem 1rem;
+  
 }
 
 .nav-item {
@@ -110,6 +110,27 @@ body {
 .rodape a:hover {
   color: #54b754;
 }
+.rodape-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.rodape-centro {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.img-right img {
+  width: 200px; /* ajuste o tamanho conforme necessário */
+  height: auto;
+}
+.img-left img {
+  width: 300px;
+  height: auto;
+}
 
 /* SOCIAL ICONS */
 .contato-social {
@@ -143,40 +164,7 @@ body {
 }
 
 /* SOBRE */
-
-.conteudo-sobre {
-  padding: 2rem 1rem;
-  background-color: #f9f9f9;
-  color: #333;
-  font-family: Arial, sans-serif;
-}
-
-.conteudo-sobre .container {
-  max-width: 960px;
-  margin: auto;
-}
-
-.conteudo-sobre h1, .conteudo-sobre h2 {
-  color: #004080;
-  margin-top: 1.5rem;
-}
-
-.conteudo-sobre ul {
-  list-style: disc inside;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-}
-
-.conteudo-sobre blockquote {
-  font-size: 1.2rem;
-  font-style: italic;
-  color: #555;
-  border-left: 4px solid #004080;
-  padding-left: 1rem;
-  margin: 1rem 0;
-}
-
-/* Box principal com fundo branco translúcido */
+/* Seção com fundo de imagem e camada escura */
 .sobre-com-fundo {
   background-image: url('./img/fundo-gigantes1.jpg');
   background-size: cover;
@@ -184,17 +172,18 @@ body {
   background-repeat: no-repeat;
   padding: 80px 20px;
   position: relative;
-  flex-grow: 1; /* ocupa o espaço disponível para empurrar footer para baixo */
+  flex-grow: 1;
 }
 
 .sobre-com-fundo::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* escurece o fundo para facilitar leitura */
+  background: rgba(0, 0, 0, 0.5); /* camada escura */
   z-index: 1;
 }
 
+/* Box branco com conteúdo */
 .box-sobre {
   position: relative;
   z-index: 2;
@@ -209,8 +198,28 @@ body {
   box-sizing: border-box;
 }
 
-.box-sobre h1, .box-sobre h2 {
+/* Títulos */
+.box-sobre h1,
+.box-sobre h2 {
   color: #004080;
+  margin-top: 1.5rem;
+}
+
+/* Listas */
+.box-sobre ul {
+  list-style: disc inside;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Citação */
+.box-sobre blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #004080;
+  padding-left: 1rem;
+  margin: 1rem 0;
 }
 
 /* Se tiver hr antes do footer */
