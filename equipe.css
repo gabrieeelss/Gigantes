@@ -1,13 +1,12 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  
 }
 
+/* === SEÇÃO EQUIPE GERAL === */
 .equipe-section {
   position: relative;
   z-index: 1;
-  
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain;
@@ -22,7 +21,6 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  
   z-index: 0;
 }
 
@@ -34,10 +32,9 @@ body {
   text-align: center;
 }
 
-/* Títulos */
+/* === TÍTULOS === */
 h1 {
   font-size: 2.8rem;
-
   color: #ffffff;
   margin-bottom: 20px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
@@ -50,25 +47,39 @@ h1 {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
-/* Cards */
-.cards-container {
+/* === ESTRUTURA DO CARROSSEL COM BOTÕES EXTERNOS === */
+.carousel-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 40px;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  position: relative;
 }
 
+.carousel-container {
+  overflow: hidden;
+  flex: 1;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* === CARD GERAL === */
 .card {
-  background-color: rgba(255, 255, 255, 0.793);
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #000;
   border-radius: 16px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   padding: 20px;
-  max-width: 260px;
-  width: 100%;
+  width: 260px;
+  flex: 0 0 auto;
   text-align: center;
   transition: transform 0.3s ease;
-  color: #000;
 }
 
 .card:hover {
@@ -76,7 +87,7 @@ h1 {
 }
 
 .card img {
-  width: 150px;
+  width: 100%;
   height: auto;
   border-radius: 12px;
   margin-bottom: 10px;
@@ -93,12 +104,14 @@ h1 {
   margin: 5px 0;
 }
 
+/* === SOCIAL ICONS === */
 .social-icons {
   margin-top: 10px;
 }
 
 .social-icons img {
   width: 28px;
+  max-width: 35px;
   margin: 0 6px;
   transition: transform 0.3s ease;
 }
@@ -107,10 +120,37 @@ h1 {
   transform: scale(1.2);
   filter: drop-shadow(0 0 6px #264bba);
 }
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  justify-items: center;
-  margin-bottom: 40px;
+
+/* === BOTÕES DO CARROSSEL === */
+.carousel-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto 40px;
 }
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(14, 95, 216, 0.7);
+  border: none;
+  font-size: 2rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 10px; /* Ajuste a distância conforme desejar */
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
+.carousel-btn:hover {
+  background: rgb(13, 0, 255);
+}
+
