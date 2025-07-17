@@ -197,6 +197,9 @@ body {
   font-family: 'Arial', sans-serif;
   box-sizing: border-box;
 }
+.texto-sobre p {
+  text-align: justify;
+}
 
 /* Títulos */
 .box-sobre h1,
@@ -284,6 +287,7 @@ hr {
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.973);
 }
 
 .hero-text p {
@@ -332,7 +336,7 @@ section {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h2 {
+h2, h1 {
   color: #004080;
   margin-bottom: 1rem;
   text-align: center;
@@ -418,4 +422,72 @@ h2 {
   .hero-text {
     margin: 0 0 2rem;
   }
+}
+/* ATAS E ESTATUTO */
+
+.grid-container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.grid-container h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* força 4 por linha */
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 por linha em telas médias */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha em tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr; /* 1 por linha no celular */
+  }
+}
+
+
+.pdf-card {
+  background: white;
+  border: 2px solid #00509d;
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pdf-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-titulo {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.pdf-card img {
+  width: 30%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
 }

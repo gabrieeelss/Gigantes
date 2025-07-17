@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
 }
-
 /* === SEÇÃO EQUIPE GERAL === */
 .equipe-section {
   position: relative;
@@ -153,4 +152,3 @@ h1 {
 .carousel-btn:hover {
   background: rgb(13, 0, 255);
 }
-
