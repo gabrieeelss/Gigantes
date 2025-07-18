@@ -1,0 +1,20 @@
+[
+  {
+    "data": "2025-06-01",
+    "titulo": "Gigantes é campeão do Torneio Regional Paulista 2025",
+    "imagem": "img/campeao-paulista.jpg",
+    "conteudo": "A equipe AECS Gigantes conquistou o título do Torneio Paulista 2025 após uma campanha invicta."
+  },
+  {
+    "data": "2025-05-15",
+    "titulo": "Atletas convocados para seleção brasileira de rugby em cadeira de rodas",
+    "imagem": "img/noticia2.jpg",
+    "conteudo": "Dois atletas da equipe AECS Gigantes foram convocados para a seleção brasileira. Uma grande conquista!"
+  },
+  {
+    "data": "2025-04-10",
+    "titulo": "Nova parceria com o CEU Estação Cidadania Vila Esperança",
+    "imagem": "img/noticia3.jpg",
+    "conteudo": "Foi firmada uma nova parceria com o CEU Vila Esperança para utilização do espaço como centro de treinamento."
+  }
+]

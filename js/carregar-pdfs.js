@@ -7,21 +7,20 @@ const pdfs = [
   { nome: "Ata Eleição da Diretoria e Conselheiros 22/01/2021", arquivo: "ATA-DE-ELEICAO-22-01-2021.pdf" },
   { nome: "Ata Adequação do Estatuto a Lei de Legislação Esportiva 26/08/2019", arquivo: "Ata-26-08-2019-adequação.pdf" },
   { nome: "Ata Eleição da Diretoria e Conselheiros 14/02/2017", arquivo: "Ata-de-Eleicao-14-02-2017.pdf" },
-  
 ];
 
-const grid = document.getElementById("grid-pdfs");
+const lista = document.getElementById("lista-pdfs");
 
 pdfs.forEach(pdf => {
-  const card = document.createElement("a");
-  card.className = "pdf-card";
-  card.href = `arquivos/atas-e-estatutos/${pdf.arquivo}`;
-  card.target = "_blank";
+  const item = document.createElement("a");
+  item.className = "pdf-item";
+  item.href = `arquivos/atas-e-estatutos/${pdf.arquivo}`;
+  item.target = "_blank";
 
-  card.innerHTML = `
-    <div class="pdf-titulo">${pdf.nome}</div>
-    <img src="img/pdf-icon.svg" alt="Miniatura PDF">
+  item.innerHTML = `
+    <div class="thumb"></div>
+    <div class="titulo">${pdf.nome}</div>
   `;
 
-  grid.appendChild(card);
+  lista.appendChild(item);
 });

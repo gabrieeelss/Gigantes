@@ -28,6 +28,7 @@
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  list-style: none;
 }
 
 .carousel-slide {

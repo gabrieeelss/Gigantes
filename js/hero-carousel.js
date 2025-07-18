@@ -32,6 +32,3 @@ window.addEventListener('resize', () => {
 
 // Rotaciona automaticamente
 setInterval(showNextSlide, 5000);
-
-// CARROSEL EQUIPE
-

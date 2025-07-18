@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AECS Gigantes</title>
   <link rel="shortcut icon" type="imagex/jpg" href="./img/glogo.jpg" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="wppbutton.css" />
-  <link rel="stylesheet" href="contato.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/wppbutton.css" />
+  <link rel="stylesheet" href="./css/contato.css" />
 </head>
-<body>
+<div>
+  <div class="page-wrapper">
   <header>
     <!-- 🔝 Menu de Navegação -->
     <ul class="nav">
@@ -44,7 +45,7 @@
 
   <!-- CONTEÚDO PRINCIPAL -->
 
-  <div class="container">
+  <div class="container-contato">
     <!-- Box Local de Treinamento -->
     <div class="box">
       <h2>📍 Local de Treinamento</h2>
@@ -127,6 +128,17 @@
 
   </div>
 </footer>
-
+</div>
+<!--PLUGIN ACESSIBILIDADE VLIBRAS-->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 </body>
 </html>

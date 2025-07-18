@@ -1,0 +1,46 @@
+.pdf-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  text-align: center, justify;
+}
+
+.pdf-item {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+  transition: background 0.3s ease;
+}
+
+.pdf-item:hover {
+  background: #e0e0e0;
+}
+
+.thumb {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background-image: url('/img/pdf-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 15px;
+}
+
+.titulo {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.titulo-h1 {
+  text-align: center;
+  color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}

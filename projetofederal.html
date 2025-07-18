@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="./css/wppbutton.css" />
   <link rel="stylesheet" href="./css/pdfs.css" />
 </head>
-<body>
+<div>
+    <div class="page-wrapper">
   <header>
     <!-- 🔝 Menu de Navegação -->
     <ul class="nav">
@@ -43,14 +44,14 @@
   </header>
 
   <!-- CONTEÚDO PRINCIPAL -->
-<div class="pdf-lista">
+  <div class="pdf-lista-container">
     <br>
-  <h1 class="titulo-h1">📂 ATAS E ESTATUTO</h1>
-  <div id="lista-pdfs" class="pdf-lista"></div>
+    <h1 class="titulo-h1">📂LEI DE INCENTIVO AO ESPORTE FEDERAL</h1>
+    <div id="lista-pdfs" class="pdf-lista"></div>
+  </div>
+
+  <script src="./js/carregar-pdfs-lei-federal.js"></script>
 </div>
-
-<script src="./js/carregar-pdfs.js"></script>
-
   <!-- BOTÃO WHATSAPP -->
   <a href="https://wa.me/5519997487329" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
     <img src="./img/wpp-icon.png" alt="WhatsApp" />
@@ -89,6 +90,7 @@
 
   </div>
 </footer>
+</div>
 <!--PLUGIN ACESSIBILIDADE VLIBRAS-->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>

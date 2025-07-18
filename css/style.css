@@ -120,7 +120,6 @@ body {
 
 .rodape-centro {
   flex: 1;
-  padding: 0 20px;
 }
 
 .img-right img {
@@ -163,44 +162,6 @@ body {
   transform: scale(1.3);
 }
 
-/* SOBRE */
-/* Seção com fundo de imagem e camada escura */
-.sobre-com-fundo {
-  background-image: url('./img/fundo-gigantes1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 80px 20px;
-  position: relative;
-  flex-grow: 1;
-}
-
-.sobre-com-fundo::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* camada escura */
-  z-index: 1;
-}
-
-/* Box branco com conteúdo */
-.box-sobre {
-  position: relative;
-  z-index: 2;
-  max-width: 960px;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  color: #333;
-  font-family: 'Arial', sans-serif;
-  box-sizing: border-box;
-}
-.texto-sobre p {
-  text-align: justify;
-}
-
 /* Títulos */
 .box-sobre h1,
 .box-sobre h2 {
@@ -230,7 +191,6 @@ hr {
   border: none;
   height: 1px;
   background-color: #000000;
-  margin-top: 40px;
   margin-bottom: 0;
 }
 
@@ -264,36 +224,7 @@ hr {
   pointer-events: none;
 }
 
-/* ====== ESTILOS NOVOS PARA INDEX ====== */
-
-/* Hero Section */
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3rem 1rem;
-  background-color: #004080;
-  color: white;
-}
-
-.hero-text {
-  flex: 1 1 400px;
-  max-width: 600px;
-  margin-right: 2rem;
-  text-align: center;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.973);
-}
-
-.hero-text p {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
+/* BOTÃO CONTATO */
 
 .btn-cta {
   background-color: #54b754;
@@ -313,17 +244,6 @@ hr {
   background-color: #3d8b3d;
 }
 
-.hero-image {
-  flex: 1 1 300px;
-  max-width: 500px;
-}
-
-.hero-image img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-}
-
 /* Seções básicas */
 section {
   padding: 3rem 1rem;
@@ -336,7 +256,7 @@ section {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h2, h1 {
+h2 {
   color: #004080;
   margin-bottom: 1rem;
   text-align: center;
@@ -463,31 +383,25 @@ h2, h1 {
   }
 }
 
+/* EMPURRA O FOOTER PARA BAIXO*/
 
-.pdf-card {
-  background: white;
-  border: 2px solid #00509d;
-  border-radius: 10px;
-  padding: 15px;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s, box-shadow 0.2s;
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ocupa no mínimo toda a altura da janela */
 }
 
-.pdf-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+main {
+  flex: 1; /* ocupa o espaço restante, empurrando o rodapé pra baixo */
 }
 
-.pdf-titulo {
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.pdf-card img {
-  width: 30%;
-  height: auto;
-  max-height: 200px;
-  object-fit: contain;
+/* WIDGET INSTAGRAM*/
+.instagram-widget {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  min-height: 400px; /* evita corte no carregamento */
+  display: flex;
+  justify-content: center;
 }
