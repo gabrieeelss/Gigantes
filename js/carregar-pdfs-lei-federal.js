@@ -1,6 +1,6 @@
 const pdfs = [
   { nome: "Projeto Aprovado", arquivo: "PROJETO APROVADO - Rugby em Cadeira de Rodas Gigantes.pdf" },
-  { nome: "Publicação no DOU", arquivo: "DOU - Rugby em Cadeira de Rodas Gigantespdf" },
+  { nome: "Publicação no DOU", arquivo: "DOU - Rugby em Cadeira de Rodas Gigantes.pdf" },
   { nome: "Retificação do Valor do Projeto", arquivo: "RETIFICAÇÃO DOU - VL DO PROJETO - 786.014.72.pdf" },
 ];
 

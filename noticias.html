@@ -6,8 +6,6 @@
   <title>AECS Gigantes</title>
   <link rel="shortcut icon" type="imagex/jpg" href="./img/glogo.jpg" />
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/wppbutton.css" />
-  <link rel="stylesheet" href="./css/pdfs.css" />
   <link rel="stylesheet" href="./css/noticias.css" />
 </head>
 <body>
@@ -44,8 +42,21 @@
   </header>
 
   <!-- CONTEÚDO PRINCIPAL -->
-<div class="noticias-grid" id="noticias-lista"></div>
-<script src="./js/carregar-noticias.js"></script>
+<section class="noticias">
+  <div class="container">
+    <h1>📰Notícias</h1>
+    <div id="noticias-lista" class="noticias-grid"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal-noticia" class="modal">
+    <div class="modal-content">
+      <span class="fechar">&times;</span>
+      <img id="modal-img" src="" alt="">
+      <div id="modal-descricao"></div>
+    </div>
+  </div>
+</section>
 
   <!-- BOTÃO WHATSAPP -->
   <a href="https://wa.me/5519997487329" class="whatsapp-float" target="_blank" aria-label="WhatsApp">

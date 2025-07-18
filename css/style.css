@@ -9,7 +9,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #165493;
+  background-color: #004080;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -249,11 +249,13 @@ section {
   padding: 3rem 1rem;
 }
 
-.resumo, .noticias, .galeria, .participe {
-  background-color: white;
-  margin-bottom: 2rem;
+.resumo, .noticias-index, .galeria, .participe {
+  background-color: rgba(255, 255, 255, 0.948);
+  margin: 0 auto 2rem;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 95%;
+  
 }
 
 h2 {
