@@ -34,3 +34,15 @@ function trocarImagem() {
 }
 
 setInterval(trocarImagem, 4000);
+// AVISO DE COOKIES
+
+  document.addEventListener('DOMContentLoaded', function () {
+    if (!localStorage.getItem('cookiesAceitos')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+
+    document.getElementById('cookie-aceitar').addEventListener('click', function () {
+      localStorage.setItem('cookiesAceitos', true);
+      document.getElementById('cookie-banner').style.display = 'none';
+    });
+  });

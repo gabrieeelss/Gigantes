@@ -1,4 +1,4 @@
-fetch('./noticias/noticias.json')
+fetch('./JSON/noticias.json')
   .then(response => response.json())
   .then(noticias => {
     const lista = document.getElementById('ultimas-noticias');

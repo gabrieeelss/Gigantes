@@ -407,3 +407,40 @@ main {
   display: flex;
   justify-content: center;
 }
+/* AVISO DE COOKIES */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1e3c64;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  font-size: 0.95rem;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+  display: none;
+}
+
+.cookie-banner a {
+  color: #0064e6;
+  text-decoration: underline;
+}
+
+.cookie-banner button {
+  background-color: #f6f6f6;
+  color: #004080;
+  border: none;
+  margin-left: 15px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cookie-banner button:hover {
+  background-color: #0064e6;
+  color: white;
+}

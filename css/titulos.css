@@ -1,0 +1,47 @@
+
+.titulos-index {
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 40px auto;
+  padding: 40px;
+  max-width: 1100px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  color: #1e3c64;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #1e3c64;
+}
+
+.linha-do-tempo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.ano-card {
+  background-color: #1e3c64;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  color: white;
+}
+
+.ano-card h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  color: #ffcc00;
+}
+
+.titulo-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fefefe10;
+  border-radius: 6px;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}

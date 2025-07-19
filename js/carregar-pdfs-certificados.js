@@ -8,6 +8,7 @@ const pdfs = [
   { nome: "Consulta Apenados TCE-SP", arquivo: "Consulta à relação de apenados do Tribunal de Contas do Estado de São Paulo - AECS.pdf" },
   { nome: "CEIS - Empresas Inidôneas", arquivo: "Consulta de empresas inidôneas e suspensas - CEIS - AECS.pdf" },
   { nome: "Sanções por Fornecedor", arquivo: "Consulta de sanções por fornecedor  - AECS.pdf" },
+  { nome: "CRC - Municipal", arquivo: "CRC Municipal.pdf" },
 ];
 
 const lista = document.getElementById("lista-pdfs");
