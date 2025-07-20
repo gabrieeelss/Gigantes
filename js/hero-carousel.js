@@ -1,34 +1,39 @@
-const track = document.querySelector('.carousel-track');
-const slides = Array.from(track.children);
-const prevButton = document.querySelector('.carousel-btn.prev');
-const nextButton = document.querySelector('.carousel-btn.next');
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.querySelector('.carousel-track');
+  if (!track) return; // Sai se não encontrar o carrossel
 
-let currentIndex = 0;
-let slideWidth = slides[0].getBoundingClientRect().width;
+  const slides = Array.from(track.children);
+  if (slides.length === 0) return; // Sai se não tiver slides
 
-function updateCarousel() {
-  const offset = currentIndex * slideWidth;
-  track.style.transform = `translateX(-${offset}px)`;
-}
+  const prevButton = document.querySelector('.carousel-btn.prev');
+  const nextButton = document.querySelector('.carousel-btn.next');
+  if (!prevButton || !nextButton) return; // Sai se não encontrar botões
 
-function showNextSlide() {
-  currentIndex = (currentIndex + 1) % slides.length;
-  updateCarousel();
-}
+  let currentIndex = 0;
+  let slideWidth = slides[0].getBoundingClientRect().width;
 
-function showPrevSlide() {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  updateCarousel();
-}
+  function updateCarousel() {
+    const offset = currentIndex * slideWidth;
+    track.style.transform = `translateX(-${offset}px)`;
+  }
 
-nextButton.addEventListener('click', showNextSlide);
-prevButton.addEventListener('click', showPrevSlide);
+  function showNextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateCarousel();
+  }
 
-// Ajusta largura em redimensionamento
-window.addEventListener('resize', () => {
-  slideWidth = slides[0].getBoundingClientRect().width;
-  updateCarousel();
+  function showPrevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateCarousel();
+  }
+
+  nextButton.addEventListener('click', showNextSlide);
+  prevButton.addEventListener('click', showPrevSlide);
+
+  window.addEventListener('resize', () => {
+    slideWidth = slides[0].getBoundingClientRect().width;
+    updateCarousel();
+  });
+
+  setInterval(showNextSlide, 5000);
 });
-
-// Rotaciona automaticamente
-setInterval(showNextSlide, 5000);

@@ -10,12 +10,21 @@
 
 </head>
 <body>
-  <header>
-    <ul class="nav">
-      <li class="nav-item">
-        <a href="index.html"><img src="img/aecs_logo.png" alt="AECS Gigantes Logo" /></a>
+<header class="header">
+  <div class="logo">
+    <a href="index.html"><img src="img/aecs_logo.png" alt="AECS Gigantes Logo" /></a>
+  </div>
+  <button class="hamburger" aria-label="Abrir Menu">&#9776;</button>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item dropdown">
+        <a href="#">Sobre</a>
+        <ul class="dropdown-menu">
+          <li><a href="sobre.html">Sobre a Associação</a></li>
+          <li><a href="organograma.html">Organograma</a></li>
+          <li><a href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+        </ul>
       </li>
-      <li class="nav-item"><a href="sobre.html">Sobre</a></li>
       <li class="nav-item dropdown">
         <a href="#">Transparência</a>
         <ul class="dropdown-menu">
@@ -36,15 +45,17 @@
         </ul>
       </li>
       <li class="nav-item"><a href="titulos.html">Títulos</a></li>
-      <li class="nav-item"><a href="noticias.html">Noticias</a></li>
+      <li class="nav-item"><a href="noticias.html">Notícias</a></li>
       <li class="nav-item"><a href="contato.html">Contato</a></li>
     </ul>
-  </header>
+  </nav>
+</header>
+
+
 
   <main>
 <section class="hero-carousel">
   <div class="hero-carousel-content">
-
     <!-- Carrossel -->
     <div class="carousel-wrapper">
       <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
@@ -186,5 +197,6 @@
   <script src="./js/carregar-ultimas-noticias.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/hero-carousel.js"></script>
+  <script src="./js/script.js" defer></script>
 </body>
 </html>
