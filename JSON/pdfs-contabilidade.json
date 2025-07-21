@@ -1,0 +1,26 @@
+{
+  "2024": [
+    { "nome": "Balanço Patrimonial 2024", "arquivo": "BALANÇO PATRIMONIAL 2024.pdf" },
+    { "nome": "DRE 2024", "arquivo": "DRE 2024.pdf" }
+  ],
+  "2023": [
+    { "nome": "Balanço Patrimonial 2023", "arquivo": "BALANÇO PATRIMONIAL 2023.pdf" },
+    { "nome": "DRE 2023", "arquivo": "DRE 2023.pdf" }
+  ],
+  "2022": [
+    { "nome": "Balanço Patrimonial 2022", "arquivo": "BALANÇO PATRIMONIAL 2022.pdf" },
+    { "nome": "DRE 2022", "arquivo": "DRE 2022.pdf" }
+  ],
+  "2021": [
+    { "nome": "Balanço Patrimonial 2021", "arquivo": "BALANÇO PATRIMONIAL 2021.pdf" },
+    { "nome": "DRE 2021", "arquivo": "DRE 2021.pdf" }
+  ],
+  "2020": [
+    { "nome": "Balanço Patrimonial 2020", "arquivo": "BALANÇO PATRIMONIAL 2020.pdf" },
+    { "nome": "DRE 2020", "arquivo": "DRE 2020.pdf" }
+  ],
+  "2019": [
+    { "nome": "Balanço Patrimonial 2019", "arquivo": "BALANÇO PATRIMONIAL 2019.pdf" },
+    { "nome": "DRE 2019", "arquivo": "DRE 2019.pdf" }
+  ]
+}

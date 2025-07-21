@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/pdfs.css" />
 </head>
 <body>
-  <!-- Header -->
+<!-- Header -->
  <header>
     <nav class="nav-bar">
       <div class="logo">
@@ -39,14 +39,7 @@
           </ul>
         </li>
         <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link">Projetos</a>
-          <ul class="dropdown-menu">
-            <li><a href="fiec.html">FIEC</a></li>
-            <li><a href="cbcp.html">CBCP</a></li>
-            <li><a href="projetofederal.html">Projeto Federal</a></li>
-          </ul>
-        </li>
+        <li class="nav-item"><a href="projetos.html" class="nav-link">Projetos</a></li>
         <li class="nav-item"><a href="titulos.html" class="nav-link">Títulos</a></li>
         <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
         <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
@@ -80,14 +73,7 @@
           </ul>
         </li>
         <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
-        <li class="nav-item dropdown">
-          <button class="nav-link dropdown-toggle" aria-expanded="false">Projetos ➤</button>
-          <ul class="dropdown-menu">
-            <li><a href="fiec.html">FIEC</a></li>
-            <li><a href="cbcp.html">CBCP</a></li>
-            <li><a href="projetofederal.html">Projeto Federal</a></li>
-          </ul>
-        </li>
+        <li class="nav-item"><a href="projetos.html" class="nav-link">Projetos</a></li>
         <li class="nav-item"><a href="titulos.html" class="nav-link">Títulos</a></li>
         <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
         <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
@@ -97,15 +83,32 @@
 
 
   <!-- CONTEÚDO PRINCIPAL -->
-  <div class="pdf-lista">
-    <br>
-    <h1 class="titulo-h1">📂FIEC - Campinas</h1>
-    <p class="subtitulo-p">Fundo de Investimento Esportivo de Campinas</p>
-    <div id="lista-pdfs" class="pdf-lista"></div>
+<section class="pdf-section">
+  <div class="titulo-header">
+  <img src="./img/projeto.png" class="titulo-img">
+  <h1 class="titulo-header-h1">Projetos</h1>
   </div>
+  <div class="pdf-grid">
+    <div class="pdf-coluna" id="pdf-fiec">
+      <h1 class="titulo-h1">📂 FIEC</h1>
+      <p class="subtitulo-p">Fundo de Investimento Esportivo de Campinas-SP</p>
+      <ul class="pdf-lista" id="lista-fiec"></ul>
+    </div>
+    <div class="pdf-coluna" id="pdf-cbcp">
+      <h1 class="titulo-h1">📂 CBCP</h1>
+      <p class="subtitulo-p">Comitê Brasileiro de Clubes Paralímpicos</p>
+      <ul class="pdf-lista" id="lista-cbcp"></ul>
+    </div>
+    <div class="pdf-coluna" id="pdf-lei">
+      <h1 class="titulo-h1">📂 Lei Federal</h1>
+      <p class="subtitulo-p">Lei de Incentivo ao Esporte - Governo Federal</p>
+      <ul class="pdf-lista" id="lista-lei"></ul>
+    </div>
+  </div>
+</section>
 
-  <script src="./js/carregar-pdfs-fiec.js"></script>
-</div>
+<script src="./js/carregar-pdfs-projetos.js"></script>
+
   <!-- BOTÃO WHATSAPP -->
   <a href="https://wa.me/5519997487329" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
     <img src="./img/wpp-icon.png" alt="WhatsApp" />
@@ -153,7 +156,9 @@
   </div>
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
-    <script src="./js/script.js"></script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <script src="./js/script.js"></script>
+  <script src="./js/carregar-pdfs-projetos.js"></script>
 </body>
 </html>

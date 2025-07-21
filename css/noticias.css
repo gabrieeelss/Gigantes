@@ -44,7 +44,7 @@ h1 {
 .modal {
   display: none;
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   padding-top: 60px;
   left: 0;
   top: 0;
@@ -85,4 +85,31 @@ h1 {
 #modal-descricao {
   font-size: 1rem;
   color: #f0f0f0;
+}
+.titulo-h1,
+.subtitulo-p {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.noticias-header {
+  display: flex;
+  align-items: center; /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.noticias-img {
+  width: 80px; /* ou ajuste conforme desejar */
+  height: auto;
+}
+
+.titulo-h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }

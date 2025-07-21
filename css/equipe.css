@@ -152,3 +152,24 @@ h1 {
 .carousel-btn:hover {
   background: rgb(13, 0, 255);
 }
+
+/* IMAGEM NO TITULO */
+.titulo-header {
+  display: flex;
+  align-items: center; /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 16px; /* espaço entre imagem e texto */
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* garante quebra no mobile */
+}
+
+.titulo-img {
+  width: 70px; /* ou o tamanho desejado */
+  height: auto;
+}
+
+.titulo-h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: white;
+}

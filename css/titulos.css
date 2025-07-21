@@ -14,17 +14,11 @@ h1 {
   color: #ffffff;
 }
 
-.linha-do-tempo {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 30%, 300px), 1fr));
-  gap: 24px;
-}
-
 .ano-card {
   background-color: #1e3c64;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  box-shadow: 0 0 10px rgb(255, 255, 255);
   color: white;
 }
 
@@ -34,23 +28,46 @@ h1 {
   margin-bottom: 16px;
   color: #ffcc00;
 }
-
-.titulo-item {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #fefefe10;
-  border-radius: 6px;
-  font-size: 1rem;
-  line-height: 1.4rem;
+.linha-do-tempo {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr; /* padrão: 1 por linha */
 }
+
+@media (min-width: 600px) {
+  .linha-do-tempo {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+  }
+}
+
 @media (min-width: 900px) {
   .linha-do-tempo {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas grandes */
   }
 }
+.titulo-h1,
+.subtitulo-p {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
 
-@media (max-width: 899px) {
-  .linha-do-tempo {
-    grid-template-columns: 1fr;
-  }
+.titulo-header {
+  display: flex;
+  align-items: center; /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 16px; /* espaço entre imagem e texto */
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* garante quebra no mobile */
+}
+
+.titulo-img {
+  width: 100px; /* ou o tamanho desejado */
+  height: auto;
+}
+
+.titulo-h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: white;
 }

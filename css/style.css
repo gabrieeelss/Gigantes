@@ -279,6 +279,19 @@ header {
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .rodape-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img-left img,
+  .img-right img {
+    margin: 20px 0; /* espaço entre as imagens */
+  }
+}
+
 /* SOCIAL ICONS */
 .contato-social {
   display: flex;
@@ -394,7 +407,7 @@ hr {
 
 /* Seções básicas */
 section {
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .resumo, .noticias-index, .galeria, .participe {

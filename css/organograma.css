@@ -39,6 +39,7 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   margin-top: 20px;
+  justify-items: center;
 }
 
 .observacoes {
@@ -54,4 +55,26 @@
 .observacoes h3 {
   margin-bottom: 10px;
   color: #004080;
+}
+
+.organograma-header {
+  display: flex;
+  align-items: center; /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 16px; /* espaço entre imagem e texto */
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* garante quebra no mobile */
+}
+
+.organograma-img {
+  width: 100px; /* ou o tamanho desejado */
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.titulo-h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }

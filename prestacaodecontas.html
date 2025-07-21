@@ -6,8 +6,8 @@
   <title>AECS Gigantes</title>
   <link rel="shortcut icon" type="imagex/jpg" href="./img/glogo.jpg" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/wppbutton.css" />
   <link rel="stylesheet" href="./css/pdfs.css" />
-
 </head>
 <body>
 <!-- Header -->
@@ -40,14 +40,7 @@
           </ul>
         </li>
         <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link">Projetos</a>
-          <ul class="dropdown-menu">
-            <li><a href="fiec.html">FIEC</a></li>
-            <li><a href="cbcp.html">CBCP</a></li>
-            <li><a href="projetofederal.html">Projeto Federal</a></li>
-          </ul>
-        </li>
+        <li class="nav-item"><a href="projetos.html" class="nav-link">Projetos</a></li>
         <li class="nav-item"><a href="titulos.html" class="nav-link">Títulos</a></li>
         <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
         <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
@@ -81,14 +74,7 @@
           </ul>
         </li>
         <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
-        <li class="nav-item dropdown">
-          <button class="nav-link dropdown-toggle" aria-expanded="false">Projetos ➤</button>
-          <ul class="dropdown-menu">
-            <li><a href="fiec.html">FIEC</a></li>
-            <li><a href="cbcp.html">CBCP</a></li>
-            <li><a href="projetofederal.html">Projeto Federal</a></li>
-          </ul>
-        </li>
+        <li class="nav-item"><a href="projetos.html" class="nav-link">Projetos</a></li>
         <li class="nav-item"><a href="titulos.html" class="nav-link">Títulos</a></li>
         <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
         <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
@@ -96,15 +82,31 @@
     </div>
   </header>
 
+
   <!-- CONTEÚDO PRINCIPAL -->
-  <div class="grid-container">
-    <br>
-    <h1 class="titulo-h1">📂LEI DE INCENTIVO AO ESPORTE FEDERAL</h1>
-    <div id="lista-pdfs" class="pdf-lista"></div>
+<section class="pdf-section">
+  <div class="titulo-header">
+  <img src="./img/lista-de-itens.png" class="titulo-img">
+  <h1 class="titulo-header-h1">Prestação de Contas</h1>
   </div>
-
-  <script src="./js/carregar-pdfs-lei-federal.js"></script>
-
+  <div class="pdf-grid">
+    <div class="pdf-coluna" id="pdf-fiec">
+      <h1 class="titulo-h1">📂 FIEC</h1>
+      <p class="subtitulo-p">Fundo de Investimento Esportivo de Campinas-SP</p>
+      <ul class="pdf-lista"></ul>
+    </div>
+    <div class="pdf-coluna" id="pdf-cbcp">
+      <h1 class="titulo-h1">📂 CBCP</h1>
+      <p class="subtitulo-p">Comitê Brasileiro de Clubes Paralímpicos</p>
+      <ul class="pdf-lista"></ul>
+    </div>
+    <div class="pdf-coluna" id="pdf-lei">
+      <h1 class="titulo-h1">📂 Lei Federal</h1>
+      <p class="subtitulo-p">Lei de Incentivo ao Esporte - Governo Federal</p>
+      <ul class="pdf-lista"></ul>
+    </div>
+  </div>
+</section>
   <!-- BOTÃO WHATSAPP -->
   <a href="https://wa.me/5519997487329" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
     <img src="./img/wpp-icon.png" alt="WhatsApp" />
@@ -143,7 +145,6 @@
 
   </div>
 </footer>
-</div>
 <!--PLUGIN ACESSIBILIDADE VLIBRAS-->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
@@ -156,5 +157,6 @@
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
   <script src="./js/script.js"></script>
+  <script src="./js/carregar-pdfs-prestacao-de-contas.js"></script>
 </body>
 </html>
