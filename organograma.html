@@ -10,44 +10,92 @@
   <link rel="stylesheet" href="./css/organograma.css" />
 </head>
 <body>
-<!-- MENU DE NAVEGAÇÃO -->
-  <header>
-    <ul class="nav">
-      <li class="nav-item">
-        <a href="index.html"><img src="img/aecs_logo.png" alt="AECS Gigantes Logo" /></a>
-      </li>
-      <li class="nav-item dropdown">
-        <a href="#">Sobre</a>
-        <ul class="dropdown-menu">
-          <li><a href="sobre.html">Sobre a Associação</a></li>
-          <li><a href="organograma.html">Organograma</a></li>
-          <li><a href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a href="#">Transparência</a>
-        <ul class="dropdown-menu">
-          <li><a href="contabilidade.html">Relatórios Contábeis</a></li>
-          <li><a href="prestacaodecontas.html">Prestação de Contas</a></li>
-          <li><a href="ataseestatuto.html">Atas e Estatuto</a></li>
-          <li><a href="certificado18-18a.html">Certificado 18-18a</a></li>
-          <li><a href="certificados.html">Certificados em Geral</a></li>
-        </ul>
-      </li>
-      <li class="nav-item"><a href="equipe.html">Equipe</a></li>
-      <li class="nav-item dropdown">
-        <a href="#">Projetos</a>
-        <ul class="dropdown-menu">
-          <li><a href="fiec.html">FIEC</a></li>
-          <li><a href="cbcp.html">CBCP</a></li>
-          <li><a href="projetofederal.html">Projeto Federal</a></li>
-        </ul>
-      </li>
-      <li class="nav-item"><a href="titulos.html">Títulos</a></li>
-      <li class="nav-item"><a href="noticias.html">Noticias</a></li>
-      <li class="nav-item"><a href="contato.html">Contato</a></li>
-    </ul>
+<!-- Header -->
+ <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/aecs_logo.png" alt="AECS Gigantes Logo" />
+        </a>
+      </div>
+
+      <!-- Menu desktop -->
+      <ul class="nav-list desktop-menu">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="sobre.html">Sobre a Associação</a></li>
+            <li><a href="organograma.html">Organograma</a></li>
+            <li><a href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Transparência</a>
+          <ul class="dropdown-menu">
+            <li><a href="contabilidade.html">Relatórios Contábeis</a></li>
+            <li><a href="prestacaodecontas.html">Prestação de Contas</a></li>
+            <li><a href="ataseestatuto.html">Atas e Estatuto</a></li>
+            <li><a href="certificado18-18a.html">Certificado 18-18a</a></li>
+            <li><a href="certificados.html">Certificados em Geral</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Projetos</a>
+          <ul class="dropdown-menu">
+            <li><a href="fiec.html">FIEC</a></li>
+            <li><a href="cbcp.html">CBCP</a></li>
+            <li><a href="projetofederal.html">Projeto Federal</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="titulos.html" class="nav-link">Títulos</a></li>
+        <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
+        <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+      </ul>
+
+      <!-- Ícone do menu mobile -->
+      <div class="mobile-menu-icon">
+        <button id="menu-toggle" class="mobile-menu-icon" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="nav-list">
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Sobre ➤</button>
+          <ul class="dropdown-menu">
+            <li><a href="sobre.html">Sobre a Associação</a></li>
+            <li><a href="organograma.html">Organograma</a></li>
+            <li><a href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Transparência ➤</button>
+          <ul class="dropdown-menu">
+            <li><a href="contabilidade.html">Relatórios Contábeis</a></li>
+            <li><a href="prestacaodecontas.html">Prestação de Contas</a></li>
+            <li><a href="ataseestatuto.html">Atas e Estatuto</a></li>
+            <li><a href="certificado18-18a.html">Certificado 18-18a</a></li>
+            <li><a href="certificados.html">Certificados em Geral</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Projetos ➤</button>
+          <ul class="dropdown-menu">
+            <li><a href="fiec.html">FIEC</a></li>
+            <li><a href="cbcp.html">CBCP</a></li>
+            <li><a href="projetofederal.html">Projeto Federal</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="titulos.html" class="nav-link">Títulos</a></li>
+        <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
+        <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+      </ul>
+    </div>
   </header>
+
 
   <!-- CONTEÚDO PRINCIPAL -->
 <section class="organograma">
@@ -162,5 +210,6 @@
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

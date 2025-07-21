@@ -3,6 +3,8 @@
   background-color: #004080;
   padding: 3rem 1rem;
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-carousel-content {

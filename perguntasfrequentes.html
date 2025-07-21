@@ -9,60 +9,108 @@
   <link rel="stylesheet" href="./css/faq.css" />
 </head>
 <body>
-<!-- MENU DE NAVEGAÇÃO -->
-  <header>
-    <ul class="nav">
-      <li class="nav-item">
-        <a href="index.html"><img src="img/aecs_logo.png" alt="AECS Gigantes Logo" /></a>
-      </li>
-      <li class="nav-item dropdown">
-        <a href="#">Sobre</a>
-        <ul class="dropdown-menu">
-          <li><a href="sobre.html">Sobre a Associação</a></li>
-          <li><a href="organograma.html">Organograma</a></li>
-          <li><a href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a href="#">Transparência</a>
-        <ul class="dropdown-menu">
-          <li><a href="contabilidade.html">Relatórios Contábeis</a></li>
-          <li><a href="prestacaodecontas.html">Prestação de Contas</a></li>
-          <li><a href="ataseestatuto.html">Atas e Estatuto</a></li>
-          <li><a href="certificado18-18a.html">Certificado 18-18a</a></li>
-          <li><a href="certificados.html">Certificados em Geral</a></li>
-        </ul>
-      </li>
-      <li class="nav-item"><a href="equipe.html">Equipe</a></li>
-      <li class="nav-item dropdown">
-        <a href="#">Projetos</a>
-        <ul class="dropdown-menu">
-          <li><a href="fiec.html">FIEC</a></li>
-          <li><a href="cbcp.html">CBCP</a></li>
-          <li><a href="projetofederal.html">Projeto Federal</a></li>
-        </ul>
-      </li>
-      <li class="nav-item"><a href="titulos.html">Títulos</a></li>
-      <li class="nav-item"><a href="noticias.html">Noticias</a></li>
-      <li class="nav-item"><a href="contato.html">Contato</a></li>
-    </ul>
+<!-- Header -->
+ <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/aecs_logo.png" alt="AECS Gigantes Logo" />
+        </a>
+      </div>
+
+      <!-- Menu desktop -->
+      <ul class="nav-list desktop-menu">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="sobre.html">Sobre a Associação</a></li>
+            <li><a href="organograma.html">Organograma</a></li>
+            <li><a href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Transparência</a>
+          <ul class="dropdown-menu">
+            <li><a href="contabilidade.html">Relatórios Contábeis</a></li>
+            <li><a href="prestacaodecontas.html">Prestação de Contas</a></li>
+            <li><a href="ataseestatuto.html">Atas e Estatuto</a></li>
+            <li><a href="certificado18-18a.html">Certificado 18-18a</a></li>
+            <li><a href="certificados.html">Certificados em Geral</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Projetos</a>
+          <ul class="dropdown-menu">
+            <li><a href="fiec.html">FIEC</a></li>
+            <li><a href="cbcp.html">CBCP</a></li>
+            <li><a href="projetofederal.html">Projeto Federal</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="titulos.html" class="nav-link">Títulos</a></li>
+        <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
+        <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+      </ul>
+
+      <!-- Ícone do menu mobile -->
+      <div class="mobile-menu-icon">
+        <button id="menu-toggle" class="mobile-menu-icon" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="nav-list">
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Sobre ➤</button>
+          <ul class="dropdown-menu">
+            <li><a href="sobre.html">Sobre a Associação</a></li>
+            <li><a href="organograma.html">Organograma</a></li>
+            <li><a href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Transparência ➤</button>
+          <ul class="dropdown-menu">
+            <li><a href="contabilidade.html">Relatórios Contábeis</a></li>
+            <li><a href="prestacaodecontas.html">Prestação de Contas</a></li>
+            <li><a href="ataseestatuto.html">Atas e Estatuto</a></li>
+            <li><a href="certificado18-18a.html">Certificado 18-18a</a></li>
+            <li><a href="certificados.html">Certificados em Geral</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Projetos ➤</button>
+          <ul class="dropdown-menu">
+            <li><a href="fiec.html">FIEC</a></li>
+            <li><a href="cbcp.html">CBCP</a></li>
+            <li><a href="projetofederal.html">Projeto Federal</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="titulos.html" class="nav-link">Títulos</a></li>
+        <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
+        <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+      </ul>
+    </div>
   </header>
 
+
   <!-- CONTEÚDO PRINCIPAL -->
-  <header class="topo">
-    <h1>❓ Perguntas Frequentes</h1>
+    <div class="faq-titulo">
+      <h1>❓ Perguntas Frequentes</h1>
     <p>Confira as dúvidas mais comuns sobre o nosso projeto</p>
-  </header>
+    </div>
 
   <main class="container-faq">
     <div class="faq-item">
       <button class="faq-question">1) O que significa AECS GIGANTES?</button>
-      <div class="faq-answer">Associação de Esporte, Cultura e Superação Gigantes.</div>
+      <div class="faq-answer">Associação de Esportes, Cultura e Superação "Gigantes".</div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">2) Quem é atendido pela AECS Gigantes?</button>
-      <div class="faq-answer">Pessoas com deficiência física aptas para o Rugby em Cadeira de Rodas. A modalidade é mista, podendo ser praticada por mulheres e homens.</div>
+      <div class="faq-answer">Pessoas com deficiência física aptas para o Rugby em Cadeira de Rodas. A modalidade é mista, podendo ser praticada por mulheres e homens de diversas deficiências.</div>
     </div>
 
     <div class="faq-item">
@@ -97,7 +145,7 @@
 
     <div class="faq-item">
       <button class="faq-question">9) Quais os horários dos treinos da AECS Gigantes?</button>
-      <div class="faq-answer">Terças das 09:00h às 12:00h, sextas das 15:00h às 18:00h e sábados das 11:00h às 14:00h (exceto por motivos de força maior).</div>
+      <div class="faq-answer">Terças das 09:00h às 12:00h, quintas das 18:00h às 20:00h e sábados das 09:00h às 12:00h (exceto por motivos de força maior).</div>
     </div>
 
     <div class="faq-item">
@@ -117,7 +165,7 @@
 
     <div class="faq-item">
       <button class="faq-question">13) Como posso entrar em contato para participar da associação?</button>
-      <div class="faq-answer">Através do e-mail: aecsgigantes@gmail.com ou pelo telefone: (19) 99748-7329.</div>
+      <div class="faq-answer">Através do formulário na página <a href="contato.html" style="font-weight: bold; color: blue;">CONTATO</a> ou por WhatsApp clicando <a href="https://wa.me/5519997487329" style="font-weight: bold; color: blue;">AQUI</a>.</div>
     </div>
 
     <div class="faq-item">
@@ -127,7 +175,7 @@
 
     <div class="faq-item">
       <button class="faq-question">15) Quem pode participar do projeto de iniciação?</button>
-      <div class="faq-answer">Pessoas a partir de 16 anos. O Rugby é voltado originalmente para atletas com tetraplegia, mas hoje também inclui pessoas com condições como poliomielite, distrofia muscular, amputações múltiplas e outras deficiências neuromusculares. Fonte: IWRF.</div>
+      <div class="faq-answer">Pessoas a partir de 16 anos. O Rugby é voltado originalmente para atletas com tetraplegia, mas hoje também inclui pessoas com condições como poliomielite, distrofia muscular, amputações múltiplas e outras deficiências neuromusculares, entre em contato com a gente para tirar qualquer dúvida.</div>
     </div>
 
     <div class="faq-item">

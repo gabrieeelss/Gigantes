@@ -1,78 +1,90 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // AVISO DE COOKIES
-  const banner = document.getElementById('cookie-banner');
-  if (banner && !localStorage.getItem('cookiesAceitos')) {
-    banner.style.display = 'block';
+document.addEventListener("DOMContentLoaded", () => {
+  inicializarBannerCookies();
+  inicializarFAQToggle();
+  inicializarCarrosselHero();
+  inicializarMenuResponsivo();
+});
+
+// ----------------------------
+// 1. Banner de Cookies
+function inicializarBannerCookies() {
+  const banner = document.getElementById("cookie-banner");
+  const aceitarBtn = document.getElementById("cookie-aceitar");
+
+  if (banner && !localStorage.getItem("cookiesAceitos")) {
+    banner.style.display = "block";
   }
 
-  const aceitarBtn = document.getElementById('cookie-aceitar');
   if (aceitarBtn) {
-    aceitarBtn.addEventListener('click', function () {
-      localStorage.setItem('cookiesAceitos', true);
-      if (banner) banner.style.display = 'none';
+    aceitarBtn.addEventListener("click", () => {
+      localStorage.setItem("cookiesAceitos", "true");
+      banner.style.display = "none";
     });
   }
+}
 
-  // PERGUNTAS FREQUENTES
-  document.querySelectorAll(".faq-question").forEach(button => {
-    button.addEventListener("click", () => {
-      const answer = button.nextElementSibling;
-      if (!answer) return;
-      answer.style.display = answer.style.display === "block" ? "none" : "block";
+// ----------------------------
+// 2. FAQ Toggle
+function inicializarFAQToggle() {
+  const perguntas = document.querySelectorAll(".faq-question");
+  perguntas.forEach(pergunta => {
+    pergunta.addEventListener("click", () => {
+      const resposta = pergunta.nextElementSibling;
+      if (!resposta) return;
+      const visivel = resposta.style.display === "block";
+      resposta.style.display = visivel ? "none" : "block";
     });
   });
+}
 
-  // Carrossel de imagens na hero
+// ----------------------------
+// 3. Carrossel de Hero
+function inicializarCarrosselHero() {
   let index = 0;
-  const imgs = document.querySelectorAll('.carousel-img');
+  const imgs = document.querySelectorAll(".carousel-img");
+  if (!imgs.length) return;
 
   function trocarImagem() {
-    imgs.forEach(img => img.classList.remove('active'));
+    imgs.forEach(img => img.classList.remove("active"));
     index = (index + 1) % imgs.length;
-    imgs[index].classList.add('active');
-  }
-  if (imgs.length > 0) {
-    setInterval(trocarImagem, 4000);
+    imgs[index].classList.add("active");
   }
 
-  // MENU RESPONSIVO
-  const hamburger = document.querySelector(".hamburger");
-  const nav = document.querySelector(".nav");
+  setInterval(trocarImagem, 4000);
+}
 
-  if (hamburger && nav) {
-    hamburger.addEventListener("click", () => {
-      nav.classList.toggle("active");
+// ----------------------------
+// 4. Menu Responsivo e Dropdowns Mobile
+function inicializarMenuResponsivo() {
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-      // Fecha todos os dropdowns ao abrir/fechar o menu
-      document.querySelectorAll(".dropdown").forEach(drop => {
-        drop.classList.remove("open");
-      });
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener("click", () => {
+      const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!expanded));
+      mobileMenu.classList.toggle("open");
     });
   }
 
-  // Dropdown mobile (abre ao clicar)
-  document.querySelectorAll(".dropdown > a").forEach(link => {
-    link.addEventListener("click", e => {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        const parent = link.parentElement;
+  const dropdownToggles = document.querySelectorAll(".mobile-menu .dropdown-toggle");
+  dropdownToggles.forEach(botao => {
+    botao.setAttribute("aria-expanded", "false");
+botao.addEventListener("click", () => {
+  const dropdown = botao.nextElementSibling;
+  const isOpen = botao.getAttribute("aria-expanded") === "true";
 
-        // Fecha outros dropdowns abertos
-        document.querySelectorAll(".dropdown").forEach(drop => {
-          if (drop !== parent) drop.classList.remove("open");
-        });
-
-        parent.classList.toggle("open");
-      }
-    });
-  });
-
-  // Fecha dropdowns se clicar fora
-  document.addEventListener("click", e => {
-    if (!e.target.closest(".nav-item.dropdown")) {
-      document.querySelectorAll(".dropdown").forEach(drop => {
-        drop.classList.remove("open");
-      });
+  // Fecha todos os outros dropdowns
+  dropdownToggles.forEach(outroBotao => {
+    if (outroBotao !== botao) {
+      outroBotao.setAttribute("aria-expanded", "false");
+      const outroDropdown = outroBotao.nextElementSibling;
+      outroDropdown.classList.remove("open");
     }
   });
+
+  // Alterna o atual
+  botao.setAttribute("aria-expanded", String(!isOpen));
+  dropdown.classList.toggle("open");
 });
+  })}

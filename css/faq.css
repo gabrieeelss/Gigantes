@@ -53,3 +53,8 @@
   font-size: 15px;
   border-top: 1px solid #ccc;
 }
+.faq-titulo {
+  color: white;
+  text-align: center;
+  padding-top: 2rem;
+}
