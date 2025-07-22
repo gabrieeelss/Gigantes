@@ -1,4 +1,4 @@
-fetch("./json/projetos.json")
+fetch("./JSON/projetos.json")
   .then(res => res.json())
   .then(data => {
     const seções = [

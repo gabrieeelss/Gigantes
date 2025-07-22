@@ -1,4 +1,4 @@
-fetch("./json/pdfs-contabilidade.json")
+fetch("./JSON/pdfs-contabilidade.json")
   .then(res => res.json())
   .then(pdfsPorAno => {
     const grid = document.getElementById("pdf-grid-contabilidade");

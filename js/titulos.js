@@ -1,4 +1,4 @@
-fetch('./json/titulos.json')
+fetch('./JSON/titulos.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('linha-do-tempo');
