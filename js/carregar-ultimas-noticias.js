@@ -1,4 +1,4 @@
-fetch('./JSON/noticias.json')
+fetch('./json/noticias.json')
   .then(response => response.json())
   .then(noticias => {
     // Ordena as notícias da mais recente para a mais antiga

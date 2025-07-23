@@ -1,4 +1,4 @@
-fetch('./JSON/prestacao-de-contas.json')
+fetch('./json/prestacao-de-contas.json')
   .then(response => response.json())
   .then(pdfs => {
     pdfs.forEach(pdf => {

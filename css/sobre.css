@@ -1,3 +1,20 @@
+/* Box branco com conteúdo */
+.box-sobre {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+.texto-sobre p {
+  text-align: justify;
+}
 
 /* SOBRE */
 /* Seção com fundo de imagem e camada escura */
@@ -17,22 +34,4 @@
   inset: 0;
   background: rgba(0, 0, 0, 0.5); /* camada escura */
   z-index: 1;
-}
-
-/* Box branco com conteúdo */
-.box-sobre {
-  position: relative;
-  z-index: 2;
-  max-width: 960px;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  color: #333;
-  font-family: 'Arial', sans-serif;
-  box-sizing: border-box;
-}
-.texto-sobre p {
-  text-align: justify;
 }
