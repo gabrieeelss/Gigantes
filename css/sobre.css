@@ -12,11 +12,7 @@
   font-family: 'Arial', sans-serif;
   box-sizing: border-box;
 }
-.texto-sobre p {
-  text-align: justify;
-}
 
-/* SOBRE */
 /* Seção com fundo de imagem e camada escura */
 .sobre-com-fundo {
   background-image: url('/img/fundo-gigantes1.jpg');
@@ -34,4 +30,36 @@
   inset: 0;
   background: rgba(0, 0, 0, 0.5); /* camada escura */
   z-index: 1;
+}
+
+.texto-sobre h1{
+  color: #004080;
+  text-align: center;
+  padding: 1rem;
+}
+
+.texto-sobre h2{
+  color: #004080;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+.box-sobre ul {
+  list-style: disc inside;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.texto-sobre p {
+  text-align: justify;
+}
+
+/* Citação */
+.box-sobre blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #004080;
+  padding-left: 1rem;
+  margin: 1rem 0;
 }
