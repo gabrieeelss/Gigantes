@@ -145,6 +145,7 @@ header {
   text-align: left;
   border-radius: 0 0 12px 12px;
   z-index: 1000;
+  transition: 0.5s;
 }
 
 .mobile-menu.open {
