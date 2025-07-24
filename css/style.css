@@ -150,6 +150,7 @@ header {
 
 .mobile-menu.open {
   display: flex;
+  max-height: 700px;
 }
 
 /* Lista de navegação */
@@ -220,7 +221,7 @@ header {
 
 .mobile-menu .dropdown-menu li a {
   padding: 8px 12px;
-  font-size: 15px;
+  font-size: 19px;
   color: #e4e4e4;
   text-decoration: none;
   border-radius: 6px;
