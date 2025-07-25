@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const pdfs = [
+    { nome: "Certificado 18-18a (em renovação)", arquivo: "18-18a Certidão de Registro Cadastral.pdf" },
     { nome: "CND Municipal", arquivo: "Certidão de Regularidade de Débito de Qualquer Origem CND Municipal - AECS.pdf" },
     { nome: "CND Federal (Receita/PGFN)", arquivo: "Certidão de Regularidade de Débitos Relativos a Créditos Tributários Federais - AECS.pdf" },
     { nome: "CNDT - Certidão Trabalhista", arquivo: "Certidão de Regularidade de Débitos Trabalhistas - CNDT - AECS.pdf" },
