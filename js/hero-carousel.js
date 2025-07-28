@@ -35,5 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCarousel();
   });
 
-  setInterval(showNextSlide, 5000);
+  setInterval(showNextSlide, 3000);
 });

@@ -20,6 +20,7 @@ h1 {
   border-radius: 12px;
   box-shadow: 0 0 10px rgb(255, 255, 255);
   color: white;
+  min-width: 365px;
 }
 
 .ano-card h2 {

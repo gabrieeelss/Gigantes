@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
       prevSelector: ".carousel-btn.prev.atletas",
       nextSelector: ".carousel-btn.next.atletas",
       visible: 3,
-      interval: 4000,
+      interval: 2000,
     },
     {
       trackSelector: ".profissionais-track",
       prevSelector: ".carousel-btn.prev.prof",
       nextSelector: ".carousel-btn.next.prof",
       visible: 3,
-      interval: 5000,
+      interval: 3000,
     },
   ];
 
