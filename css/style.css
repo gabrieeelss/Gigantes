@@ -109,6 +109,9 @@ header {
   color: #0077b6;
 }
 
+.nav-list .dropdown-toggle {
+  font-weight: 500;
+}
 /* Ícone do menu */
 .mobile-menu-icon {
   display: block;
