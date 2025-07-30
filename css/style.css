@@ -109,6 +109,9 @@ header {
   color: #0077b6;
 }
 
+.nav-list .dropdown-toggle {
+  font-weight: 500;
+}
 /* Ícone do menu */
 .mobile-menu-icon {
   display: block;
@@ -570,10 +573,11 @@ main {
   z-index: 9999;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
   display: none;
+  border: 5px solid coral;
 }
 
 .cookie-banner a {
-  color: #0064e6;
+  color: coral;
   text-decoration: underline;
 }
 

@@ -9,6 +9,10 @@
   justify-content: space-between;
 }
 
+.horarios li {
+  margin-left: 1.1rem;
+}
+
 .box {
   background-color: #fff;
   border-radius: 10px;
