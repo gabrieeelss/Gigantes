@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 /* CABEÇALHO E MENU */
 header {
   display: flex;
@@ -48,7 +49,6 @@ header {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  
   align-items: center;
   justify-content: center;
   padding: 0;
@@ -61,8 +61,11 @@ header {
 
 .nav-item > a,
 .nav-item > button {
-  display: block;
-  padding: 10px 15px;
+  display: flex; /* Usar flexbox para centralizar conteúdo */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  height: 40px; /* Altura fixa para todos os itens do menu */
+  padding: 0 15px; /* Ajusta o padding horizontal */
   text-decoration: none;
   color: #2c3e50;
   font-size: 20px;
@@ -109,9 +112,12 @@ header {
   color: #0077b6;
 }
 
+/* Garante que o dropdown-toggle tenha a mesma aparência de um nav-link */
 .nav-list .dropdown-toggle {
   font-weight: 500;
+  /* Não precisa de regras adicionais aqui se .nav-item > a já cobrir */
 }
+
 /* Ícone do menu */
 .mobile-menu-icon {
   display: block;
@@ -128,7 +134,7 @@ header {
     display: none;
   }
 
-  .nav-item:hover > .dropdown-menu {
+  .nav-item.dropdown:hover > .dropdown-menu { /* Adicionado .dropdown para maior especificidade */
     display: block;
   }
 }
@@ -148,12 +154,14 @@ header {
   text-align: left;
   border-radius: 8px;
   z-index: 1000;
-  transition: 0.5s;
+  transition: max-height 0.5s ease-in-out; /* Transição para max-height */
+  overflow: hidden; /* Esconde o conteúdo que transborda */
+  max-height: 0; /* Inicia fechado */
 }
 
 .mobile-menu.open {
   display: flex;
-  max-height: 700px;
+  max-height: 700px; /* Altura suficiente para mostrar o menu */
 }
 
 /* Lista de navegação */
@@ -164,6 +172,8 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start; /* Alinha os itens ao início (esquerda) */
+  justify-content: flex-start; /* Garante que o conteúdo da lista também inicie à esquerda */
 }
 
 .mobile-menu .nav-item {
@@ -175,7 +185,7 @@ header {
   margin-bottom: 0;
 }
 
-/* Links e botões do menu */
+/* Links e botões do menu mobile */
 .mobile-menu .nav-item > a,
 .mobile-menu .nav-item > button {
   display: block;
@@ -187,24 +197,24 @@ header {
   border-radius: 8px;
   transition: background 0.3s;
   border: 1px solid #dbdbdb;
+  text-align: left; /* Alinha o texto à esquerda dentro do botão/link */
+  font-weight: 500;
 }
 
-/* Botão dropdown */
+/* Botão dropdown mobile */
 .mobile-menu .dropdown-toggle::after {
   content: " ▼";
   font-size: 20px;
+  float: right; /* Alinha o triângulo à direita */
+  transition: transform 0.3s ease;
 }
 
-.dropdown-toggle {
-  background: none;
-  border: none;
-  color: #2c3e50;
-  font-weight: 500;
-  font-size: 20px;
-  cursor: pointer;
+/* Rotação do ícone de dropdown quando aberto */
+.mobile-menu .dropdown-toggle[aria-expanded="true"]::after {
+  transform: rotate(180deg);
 }
 
-/* Submenu dropdown */
+/* Submenu dropdown mobile */
 .mobile-menu .dropdown-menu {
   display: none;
   flex-direction: column;
@@ -212,6 +222,8 @@ header {
   border-radius: 6px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   border: 1px solid #6d6d6d;
+  width: calc(100% - 20px); /* Ocupa a largura total menos um padding */
+  margin: 10px 10px 0; /* Centraliza e adiciona margem superior */
 }
 
 .mobile-menu .dropdown-menu li {
@@ -232,32 +244,27 @@ header {
   background-color: #004080;
 }
 
-/* Correção para alinhamento da lista no menu mobile */
-.mobile-menu .nav-list {
-    align-items: flex-start; /* Alinha os itens ao início (esquerda) */
-    justify-content: flex-start; /* Garante que o conteúdo da lista também inicie à esquerda */
-}
-
-/* Garante que links e botões dentro dos itens também preencham a largura */
-.mobile-menu .nav-item > a,
-.mobile-menu .nav-item > button {
-    text-align: left; /* Alinha o texto à esquerda dentro do botão/link */
-    font-weight: 500;
-}
 /* RESPONSIVIDADE */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) { /* Usei 767px para evitar sobreposição no 768px */
   .desktop-menu {
     display: none;
   }
 
-  .mobile-menu .nav-list {
-    align-items: flex-start;
-  }
+  /* Não é necessário .mobile-menu .nav-list aqui, já está definido acima */
 
   .logo {
-    display: none;
+    display: none; /* Se a logo some no mobile */
+  }
+
+  .nav-bar { /* Ajuste o alinhamento da nav-bar no mobile se a logo sumir */
+    justify-content: flex-end; /* Alinha o ícone do menu à direita */
+  }
+
+  header {
+    justify-content: flex-end; /* Alinha o ícone do menu à direita */
   }
 }
+
 /* Container para centralizar conteúdos */
 .container {
   max-width: 1200px;
@@ -273,7 +280,7 @@ header {
   text-align: center;
   font-family: Arial, sans-serif;
   font-size: 14px;
-  flex-shrink: 0; /* evita que o footer encolha */
+  flex-shrink: 0;
 }
 
 .rodape a {
@@ -285,6 +292,7 @@ header {
 .rodape a:hover {
   color: #54b754;
 }
+
 .rodape-flex {
   display: flex;
   align-items: center;
@@ -298,9 +306,10 @@ header {
 }
 
 .img-right img {
-  width: 200px; /* ajuste o tamanho conforme necessário */
+  width: 200px;
   height: auto;
 }
+
 .img-left img {
   width: 300px;
   height: auto;
@@ -315,17 +324,17 @@ header {
 
   .img-left img,
   .img-right img {
-    margin: 20px 0; /* espaço entre as imagens */
+    margin: 20px 0;
   }
 }
 
 /* SOCIAL ICONS */
 .contato-social {
   display: flex;
-  justify-content: center; /* centraliza os itens */
+  justify-content: center;
   align-items: center;
   gap: 15px;
-  flex-wrap: wrap; /* para não quebrar se for estreito */
+  flex-wrap: wrap;
   margin-top: 10px;
   font-size: 14px;
 }
@@ -389,20 +398,18 @@ hr {
 }
 
 /* BOTÃO CONTATO */
-
 .btn-cta {
   background-color: #54b754;
   color: white;
-  padding: 8px 20px; /* menor altura e largura */
+  padding: 8px 20px;
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
   transition: background-color 0.3s ease;
   display: block;
-  width: fit-content; /* botão só com o tamanho do conteúdo */
-  margin: 0 auto; /* centraliza */
+  width: fit-content;
+  margin: 0 auto;
 }
-
 
 .btn-cta:hover {
   background-color: #3d8b3d;
@@ -419,7 +426,6 @@ section {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   max-width: 95%;
-  
 }
 
 h2 {
@@ -447,7 +453,7 @@ h2 {
 }
 
 /* Notícias */
-.noticias ul {
+.noticias ul { /* Correção: a classe no HTML é noticias-index, mas essa regra é genérica para 'noticias' */
   max-width: 800px;
   margin: 0 auto 1rem;
   list-style: none;
@@ -499,7 +505,6 @@ h2 {
 }
 
 /* ATAS E ESTATUTO */
-
 .grid-container {
   padding: 40px 20px;
   max-width: 1000px;
@@ -515,39 +520,38 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* força 4 por linha */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   justify-content: center;
 }
 
 @media (max-width: 1024px) {
   .grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 por linha em telas médias */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 por linha em tablets */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .grid {
-    grid-template-columns: 1fr; /* 1 por linha no celular */
+    grid-template-columns: 1fr;
   }
 }
 
 /* EMPURRA O FOOTER PARA BAIXO*/
-
-.page-wrapper {
+.page-wrapper { /* Adicione esta classe ao <body> ou um wrapper principal se quiser usá-la */
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* ocupa no mínimo toda a altura da janela */
+  min-height: 100vh;
 }
 
 main {
-  flex: 1; /* ocupa o espaço restante, empurrando o rodapé pra baixo */
+  flex: 1;
 }
 
 /* WIDGET INSTAGRAM*/
@@ -559,6 +563,7 @@ main {
   display: flex;
   justify-content: center;
 }
+
 /* AVISO DE COOKIES */
 .cookie-banner {
   position: fixed;

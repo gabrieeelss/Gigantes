@@ -7,10 +7,9 @@
   <link rel="shortcut icon" type="imagex/jpg" href="./img/glogo.jpg" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/hero-carousel.css" />
-
 </head>
 <body>
- <header>
+  <header>
     <nav class="nav-bar">
       <div class="logo">
         <a href="index.html">
@@ -18,9 +17,9 @@
         </a>
       </div>
 
-            <ul class="nav-list desktop-menu">
+      <ul class="nav-list desktop-menu">
         <li class="nav-item dropdown">
-          <button class="nav-link dropdown-toggle" >Sobre </button>
+          <a href="#" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">Sobre</a>
           <ul class="dropdown-menu">
             <li><a href="sobre.html">Sobre a Associação</a></li>
             <li><a href="organograma.html">Organograma</a></li>
@@ -28,11 +27,11 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link">Transparência</a>
+          <a href="#" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">Transparência</a>
           <ul class="dropdown-menu">
             <li><a href="contabilidade.html">Relatórios Contábeis</a></li>
             <li><a href="prestacaodecontas.html">Prestação de Contas</a></li>
-            <li><a href="ataseestatuto.html">Atas e Estatuto</a></li>
+            <li><a href="atasestatuto.html">Atas e Estatuto</a></li>
             <li><a href="certificados.html">Certificados em Geral</a></li>
           </ul>
         </li>
@@ -43,16 +42,14 @@
         <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
       </ul>
 
-            
-        <button id="menu-toggle" class="mobile-menu-icon" aria-label="Abrir menu" aria-expanded="false">☰</button>
-      
+      <button id="menu-toggle" class="mobile-menu-icon" aria-label="Abrir menu" aria-expanded="false">☰</button>
     </nav>
 
-        <nav id="mobile-menu" class="mobile-menu">
+    <nav id="mobile-menu" class="mobile-menu">
       <ul class="nav-list">
         <li class="nav-item"><a href="index.html">Home</a></li>
         <li class="nav-item dropdown">
-          <button class="nav-link dropdown-toggle" aria-expanded="false">Sobre</button>
+          <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Sobre</button>
           <ul class="dropdown-menu">
             <li><a href="sobre.html">Sobre a Associação</a></li>
             <li><a href="organograma.html">Organograma</a></li>
@@ -60,11 +57,11 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <button class="nav-link dropdown-toggle" aria-expanded="false">Transparência</button>
+          <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Transparência</button>
           <ul class="dropdown-menu">
             <li><a href="contabilidade.html">Relatórios Contábeis</a></li>
             <li><a href="prestacaodecontas.html">Prestação de Contas</a></li>
-            <li><a href="ataseestatuto.html">Atas e Estatuto</a></li>
+            <li><a href="atasestatuto.html">Atas e Estatuto</a></li>
             <li><a href="certificados.html">Certificados em Geral</a></li>
           </ul>
         </li>
@@ -74,52 +71,50 @@
         <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
         <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
       </ul>
-        </nav>
+    </nav>
   </header>
 
   <main>
-<section class="hero-carousel">
-  <div class="hero-carousel-content">
+    <section class="hero-carousel">
+      <div class="hero-carousel-content">
         <div class="carousel-wrapper">
-      <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
-      <div class="carousel-track-container">
-        <ul class="carousel-track">
-          <li class="carousel-slide"><img src="./img/galeria/galeria1.jpg" alt="Foto 1" /></li>
-          <li class="carousel-slide"><img src="./img/galeria/galeria2.jpg" alt="Foto 2" /></li>
-          <li class="carousel-slide"><img src="./img/galeria/galeria3.jpg" alt="Foto 3" /></li>
-          <li class="carousel-slide"><img src="./img/galeria/galeria4.jpg" alt="Foto 4" /></li>
-          <li class="carousel-slide"><img src="./img/galeria/galeria5.jpg" alt="Foto 5" /></li>
-          <li class="carousel-slide"><img src="./img/galeria/galeria6.jpg" alt="Foto 6" /></li>
-          <li class="carousel-slide"><img src="./img/galeria/galeria7.jpg" alt="Foto 7" /></li>
-          <li class="carousel-slide"><img src="./img/galeria/galeria8.jpg" alt="Foto 8" /></li>
-        </ul>
-      </div>
-      <button class="carousel-btn next" aria-label="Próxima">&#10095;</button>
-    </div>
+          <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+          <div class="carousel-track-container">
+            <ul class="carousel-track">
+              <li class="carousel-slide"><img src="./img/galeria/galeria1.jpg" alt="Foto 1" /></li>
+              <li class="carousel-slide"><img src="./img/galeria/galeria2.jpg" alt="Foto 2" /></li>
+              <li class="carousel-slide"><img src="./img/galeria/galeria3.jpg" alt="Foto 3" /></li>
+              <li class="carousel-slide"><img src="./img/galeria/galeria4.jpg" alt="Foto 4" /></li>
+              <li class="carousel-slide"><img src="./img/galeria/galeria5.jpg" alt="Foto 5" /></li>
+              <li class="carousel-slide"><img src="./img/galeria/galeria6.jpg" alt="Foto 6" /></li>
+              <li class="carousel-slide"><img src="./img/galeria/galeria7.jpg" alt="Foto 7" /></li>
+              <li class="carousel-slide"><img src="./img/galeria/galeria8.jpg" alt="Foto 8" /></li>
+            </ul>
+          </div>
+          <button class="carousel-btn next" aria-label="Próxima">&#10095;</button>
+        </div>
 
         <div class="hero-image-between">
-      <img src="./img/mascote2.svg" alt="Imagem entre carrossel e texto" class="img-neon-svg" />
-    </div>
+          <img src="./img/mascote2.svg" alt="Imagem entre carrossel e texto" class="img-neon-svg" />
+        </div>
 
         <div class="hero-text">
-      <h1>#SomosGigantes</h1>
-      <p>Rugby em cadeira de rodas: superação, inclusão e espírito de equipe</p>
-      <a href="sobre.html" class="btn-cta">Conheça nossa história</a>
-      <br>
-      <br>
-       <div class="social-icons">
-          <a href="https://facebook.com/gigantesrugbycr" target="_blank">
-            <img src="img/Facebook_logo_(square).png" alt="Facebook" width="50px" /></a>
-          <a href="https://instagram.com/gigantes_rugby" target="_blank">
-            <img src="img/Instagram_icon.png" alt="Instagram" width="50px" /></a>
+          <h1>#SomosGigantes</h1>
+          <p>Rugby em cadeira de rodas: superação, inclusão e espírito de equipe</p>
+          <a href="sobre.html" class="btn-cta">Conheça nossa história</a>
+          <br>
+          <br>
+          <div class="social-icons">
+            <a href="https://facebook.com/gigantesrugbycr" target="_blank">
+              <img src="img/Facebook_logo_(square).png" alt="Facebook" width="50px" /></a>
+            <a href="https://instagram.com/gigantes_rugby" target="_blank">
+              <img src="img/Instagram_icon.png" alt="Instagram" width="50px" /></a>
+          </div>
         </div>
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
-
-
-        <section class="resumo">
+    <section class="resumo">
       <div class="container">
         <h2>Quem somos</h2>
         <p>A AECS Gigantes é uma entidade sem fins lucrativos dedicada ao desenvolvimento do Rugby em Cadeira de Rodas, promovendo inclusão e superação através do esporte.</p>
@@ -127,7 +122,7 @@
       </div>
     </section>
 
-        <section class="noticias-index">
+    <section class="noticias-index">
       <div class="container">
         <h2>Últimas Notícias</h2>
         <ul id="ultimas-noticias"></ul>
@@ -136,16 +131,16 @@
     </section>
 
     <section class="galeria">
-  <div class="container">
-    <h2>Nosso Instagram</h2>
-    <div class="instagram-widget">
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-74a47237-bea1-4c6d-b4bb-aad2fb3fa59c" data-elfsight-app-lazy></div>
-    </div>
-    </div>
-</section>
+      <div class="container">
+        <h2>Nosso Instagram</h2>
+        <div class="instagram-widget">
+          <script src="https://static.elfsight.com/platform/platform.js" async></script>
+          <div class="elfsight-app-74a47237-bea1-4c6d-b4bb-aad2fb3fa59c" data-elfsight-app-lazy></div>
+        </div>
+      </div>
+    </section>
 
-        <section class="participe">
+    <section class="participe">
       <div class="container">
         <h2>Quer fazer parte?</h2>
         <p>Seja atleta, voluntário ou apoiador — sua participação é essencial para continuarmos crescendo e transformando vidas!</p>
@@ -154,39 +149,37 @@
     </section>
   </main>
 
-    <a href="https://wa.me/5519997487329" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <a href="https://wa.me/5519997487329" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
     <img src="./img/wpp-icon.png" alt="WhatsApp" />
   </a>
 
-    <hr />
-<footer class="rodape">
-  <div class="container rodape-flex">
-    
-        <div class="img-left">
-      <img src="img/SeloCBCP_BrancoH.png" alt="Logo CBCP">
-    </div>
+  <hr />
+  <footer class="rodape">
+    <div class="container rodape-flex">
+      <div class="img-left">
+        <img src="img/SeloCBCP_BrancoH.png" alt="Logo CBCP">
+      </div>
 
-        <div class="rodape-centro">
-      <p>&copy; 2025 ASSOCIAÇÃO DE ESPORTES E CULTURA SUPERAÇÃO "GIGANTES"<br>CNPJ: 17.869.245/0001-52</p>
-      <div class="contato-social">
-        <span>Telefone/WhatsApp: (19)99748-7329 | 
-          <a href="https://wa.me/5519997487329">Fale conosco</a>
-        </span>
-        <div class="social-icons">
-          <a href="https://facebook.com/gigantesrugbycr" target="_blank">
-            <img src="img/Facebook_logo_(square).png" alt="Facebook" /></a>
-          <a href="https://instagram.com/gigantes_rugby" target="_blank">
-            <img src="img/Instagram_icon.png" alt="Instagram" /></a>
+      <div class="rodape-centro">
+        <p>&copy; 2025 ASSOCIAÇÃO DE ESPORTES E CULTURA SUPERAÇÃO "GIGANTES"<br>CNPJ: 17.869.245/0001-52</p>
+        <div class="contato-social">
+          <span>Telefone/WhatsApp: (19)99748-7329 |
+            <a href="https://wa.me/5519997487329">Fale conosco</a>
+          </span>
+          <div class="social-icons">
+            <a href="https://facebook.com/gigantesrugbycr" target="_blank">
+              <img src="img/Facebook_logo_(square).png" alt="Facebook" /></a>
+            <a href="https://instagram.com/gigantes_rugby" target="_blank">
+              <img src="img/Instagram_icon.png" alt="Instagram" /></a>
+          </div>
         </div>
       </div>
-    </div>
 
-        <div class="img-right">
-      <img src="img/Logo-Fiec.png" alt="Logo FIEC">
+      <div class="img-right">
+        <img src="img/Logo-Fiec.png" alt="Logo FIEC">
+      </div>
     </div>
-
-  </div>
-</footer>
+  </footer>
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -197,12 +190,12 @@
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
-    <div id="cookie-banner" class="cookie-banner">
-  <p>Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="#">Política de Privacidade</a>.</p>
-  <button id="cookie-aceitar">Aceitar</button>
-</div>
+  <div id="cookie-banner" class="cookie-banner">
+    <p>Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="#">Política de Privacidade</a>.</p>
+    <button id="cookie-aceitar">Aceitar</button>
+  </div>
 
-    <div id="menu-overlay" class="menu-overlay"></div>
+  <div id="menu-overlay" class="menu-overlay"></div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/carregar-ultimas-noticias.js"></script>
