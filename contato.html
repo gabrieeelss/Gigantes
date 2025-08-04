@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -97,20 +97,32 @@
     </div>
 
     <!-- Box Formulário de Contato -->
-    <div class="box">
-      <h2>📨 Fale Conosco</h2>
-      <form action="https://formsubmit.co/aecsgigantes@gmail.com" method="POST">
-        <input type="text" name="nome" placeholder="Seu nome" required>
-        <input type="tel" name="telefone" placeholder="Telefone (com DDD)" required>
-        <input type="email" name="email" placeholder="Seu e-mail" required>
-        <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+<div class="box">
+  <h2>📨 Fale Conosco</h2>
+  <form id="meu-formulario" action="https://formsubmit.co/aecsgigantes@gmail.com" method="POST">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="tel" name="telefone" placeholder="Telefone (com DDD)" required>
+    <input type="email" name="email" placeholder="Seu e-mail" required>
+    <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
 
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://seusite.com.br/obrigado.html">
+    <input type="hidden" name="_captcha" value="true">
+    
+    <input type="hidden" name="_next" value=""> 
 
-        <button type="submit">Enviar Mensagem</button>
-      </form>
-    </div>
+    <input type="hidden" name="_autoresponse" value="Olá! Nós do GIGANTES Agradecemos o seu contato. Sua mensagem foi recebida com sucesso e entraremos em contato em breve.">
+    
+    <button type="submit">Enviar Mensagem</button>
+  </form>
+</div>
+<!-- Balão de Agradecimento-->
+<div id="agradecimento-popup" class="agradecimento-balao">
+  <div class="balao-conteudo">
+    <h3>Obrigado pelo seu contato!</h3>
+    <p>Sua mensagem foi enviada com sucesso.</p>
+    <p>Em breve entraremos em contato com você!</p>
+    <button id="fechar-popup" class="botao-fechar">Fechar</button>
+  </div>
+</div>
 
     <!-- Box Sede Administrativa -->
     <div class="box">
@@ -179,5 +191,6 @@
       <div id="menu-overlay" class="menu-overlay"></div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./js/script.js"></script>
+  <script src="./js/contato.js"></script>
 </body>
 </html>

@@ -25,6 +25,7 @@
 h2 {
   color: #004080;
   margin-top: 0;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.185);
 }
 
 iframe {
@@ -63,4 +64,60 @@ form button:hover {
   .container {
     flex-direction: column;
   }
+}
+
+/* Balão de agradecimento */
+.agradecimento-balao {
+  /* O importante é essa linha. Esconde o balão por padrão. */
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  
+  /* Adicionei uma transição para a opacidade e visibilidade */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  visibility: hidden;
+}
+
+/* O conteúdo do balão */
+.balao-conteudo {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+/* Esta classe será adicionada pelo JavaScript para mostrar o balão */
+.agradecimento-balao.mostrar {
+  display: flex; /* Muda o display para flex, mostrando o balão */
+  opacity: 1;
+  visibility: visible;
+}
+
+.agradecimento-balao.mostrar .balao-conteudo {
+  transform: scale(1); /* Deixa o balão em tamanho normal */
+}
+
+.botao-fechar {
+  padding: 0.3rem;
+  margin-top: 1rem;
+  background-color: #004080;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.balao-conteudo h3 {
+  color: #004080;
 }
