@@ -1,90 +1,176 @@
-/* ======= Estilos Gerais ======= */
-.parceiros-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 40px;
-    background-color: #fff;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+/* === SEÇÃO EQUIPE GERAL === */
+.equipe-section {
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  background-attachment: scroll;
+  min-height: 100vh;
+  padding: 60px 20px;
+  color: #fff;
+  overflow: hidden;
 }
 
-/* Card do parceiro */
-.parceiro-card {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
+.equipe-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
 
-/* Logo no topo */
-.parceiro-logo {
-    width: 100%;
-    background-color: #fff;
-    text-align: center;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-}
-.parceiro-logo img {
-    max-width: 150px;
-    max-height: 80px;
-    object-fit: contain;
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
 }
 
-/* Carrossel */
-.carousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 200px;
+/* === TÍTULOS === */
+h1 {
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
+
+.subtitulo {
+  font-size: 2rem;
+  margin: 20px 0 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* === ESTRUTURA DO CARROSSEL COM BOTÕES EXTERNOS === */
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  position: relative;
+}
+
+.carousel-container {
+  overflow: hidden;
+  flex: 1;
+}
+
 .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-.carousel-track img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
 }
 
-/* Setas do carrossel */
-.carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
-    color: #fff;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 10;
-}
-.carousel-arrow.left {
-    left: 10px;
-}
-.carousel-arrow.right {
-    right: 10px;
-}
-.carousel-arrow:hover {
-    background-color: rgba(0,0,0,0.8);
+/* === CARD GERAL === */
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #000;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 260px;
+  flex: 0 0 auto;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-/* ======= Responsividade ======= */
-@media (max-width: 1024px) {
-    .parceiros-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.card:hover {
+  transform: scale(1.05);
 }
-@media (max-width: 768px) {
-    .parceiros-container {
-        grid-template-columns: 1fr;
-    }
-    .carousel {
-        height: 180px;
-    }
-    .carousel-track img {
-        height: 180px;
-    }
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  color: #004080;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+/* === SOCIAL ICONS === */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 28px;
+  max-width: 35px;
+  margin: 0 6px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #264bba);
+}
+
+/* === BOTÕES DO CARROSSEL === */
+.carousel-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(14, 95, 216, 0.7);
+  border: none;
+  font-size: 2rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  z-index: 10;
+  border: 1px solid black;
+}
+
+.carousel-btn.prev {
+  left: 10px; /* Ajuste a distância conforme desejar */
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
+.carousel-btn:hover {
+  background: rgb(13, 0, 255);
+}
+
+/* IMAGEM NO TITULO */
+.titulo-header {
+  display: flex;
+  align-items: center; /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 16px; /* espaço entre imagem e texto */
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* garante quebra no mobile */
+}
+
+.titulo-img {
+  width: 70px; /* ou o tamanho desejado */
+  height: auto;
+}
+
+.titulo-h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: white;
 }
