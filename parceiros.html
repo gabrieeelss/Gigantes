@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AECS Gigantes</title>
   <link rel="shortcut icon" type="imagex/jpg" href="./img/glogo.jpg" />
+  <link rel="stylesheet" href="./css/parceiros.css" />
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/pdfs.css" />
 </head>
 <body>
+    
 <!-- Header -->
  <header>
     <nav class="nav-bar">
@@ -77,32 +78,67 @@
         </nav>
   </header>
 
-<main>
+
   <!-- CONTEÚDO PRINCIPAL -->
-<section class="pdf-section">
-  <div class="titulo-header">
-  <img src="./img/lista-de-itens.png" class="titulo-img">
-  <h1 class="titulo-header-h1">Prestação de Contas</h1>
-  </div>
-  <div class="pdf-grid">
-    <div class="pdf-coluna" id="pdf-fiec">
-      <h1 class="titulo-h1">📂 FIEC</h1>
-      <p class="subtitulo-p">Fundo de Investimento Esportivo de Campinas-SP</p>
-      <ul class="pdf-lista"></ul>
+<main>
+<section class="parceiros-container">
+    <!-- Parceiro 1 -->
+    <div class="parceiro-card">
+        <div class="parceiro-logo">
+            <img src="img/parceiros/sesc/sesc_logo.png" alt="Sesc">
+        </div>
+        <div class="carousel" data-carousel>
+            <button class="carousel-arrow left" data-prev>&#10094;</button>
+            <div class="carousel-track">
+                <img src="img/parceiros/sesc/foto1.webp" alt="">
+                <img src="img/parceiros/sesc/foto2.webp" alt="">
+                <img src="img/parceiros/sesc/foto3.webp" alt="">
+                <img src="img/parceiros/sesc/foto4.webp" alt="">
+                <img src="img/parceiros/sesc/foto5.webp" alt="">
+                <img src="img/parceiros/sesc/foto6.webp" alt="">
+                <img src="img/parceiros/sesc/foto7.webp" alt="">
+                <img src="img/parceiros/sesc/foto8.webp" alt="">
+            </div>
+            <button class="carousel-arrow right" data-next>&#10095;</button>
+        </div>
     </div>
-    <div class="pdf-coluna" id="pdf-cbcp">
-      <h1 class="titulo-h1">📂 CBCP</h1>
-      <p class="subtitulo-p">Comitê Brasileiro de Clubes Paralímpicos</p>
-      <ul class="pdf-lista"></ul>
+
+    <!-- Parceiro 2 -->
+    <div class="parceiro-card">
+        <div class="parceiro-logo">
+            <img src="img/parceiros/fiec/logo-fiec.png" alt="Fiec">
+        </div>
+        <div class="carousel" data-carousel>
+            <button class="carousel-arrow left" data-prev>&#10094;</button>
+            <div class="carousel-track">
+                <img src="img/parceiros/parceiro2-1.jpg" alt="">
+                <img src="img/parceiros/parceiro2-2.jpg" alt="">
+                <img src="img/parceiros/parceiro2-3.jpg" alt="">
+            </div>
+            <button class="carousel-arrow right" data-next>&#10095;</button>
+        </div>
     </div>
-    <div class="pdf-coluna" id="pdf-lei">
-      <h1 class="titulo-h1">📂 Lei Federal</h1>
-      <p class="subtitulo-p">Lei de Incentivo ao Esporte - Governo Federal</p>
-      <ul class="pdf-lista"></ul>
+
+    <!-- Parceiro 3 -->
+    <div class="parceiro-card">
+        <div class="parceiro-logo">
+            <img src="img/parceiros/cbcp/logo_cbcp1.png" alt="CBCP">
+        </div>
+        <div class="carousel" data-carousel>
+            <button class="carousel-arrow left" data-prev>&#10094;</button>
+            <div class="carousel-track">
+                <img src="img/parceiros/parceiro3-1.jpg" alt="">
+                <img src="img/parceiros/parceiro3-2.jpg" alt="">
+                <img src="img/parceiros/parceiro3-3.jpg" alt="">
+            </div>
+            <button class="carousel-arrow right" data-next>&#10095;</button>
+        </div>
     </div>
-  </div>
 </section>
 </main>
+<script src="js/parceiros.js"></script>
+
+
   <!-- BOTÃO WHATSAPP -->
   <a href="https://wa.me/5519997487329" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
     <img src="./img/wpp-icon.png" alt="WhatsApp" />
@@ -141,7 +177,6 @@
 
   </div>
 </footer>
-  </div>
 <!--PLUGIN ACESSIBILIDADE VLIBRAS-->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
@@ -153,7 +188,7 @@
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
-  <script src="./js/carregar-pdfs-prestacao-de-contas.js"></script>
+  <script src="./js/carregar-pdfs-projetos.js"></script>
       <div id="menu-overlay" class="menu-overlay"></div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./js/script.js"></script>
