@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { nome: "CRC - Municipal", arquivo: "CRC Municipal.pdf" },
   ];
 
-  const lista = document.getElementById("lista-pdfs");
+  const lista = document.getElementById("lista-pdfs-certificados");
 
   pdfs.forEach(pdf => {
     const li = document.createElement("li");

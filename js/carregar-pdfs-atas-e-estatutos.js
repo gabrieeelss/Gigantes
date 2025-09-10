@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { nome: "Ata Eleição da Diretoria e Conselheiros 14/02/2017", arquivo: "Ata-de-Eleicao-14-02-2017.pdf" }
   ];
 
-  const lista = document.getElementById("lista-pdfs");
+  const lista = document.getElementById("lista-pdfs-atas");
 
   arquivosAtasEstatuto.forEach(pdf => {
     const li = document.createElement("li");

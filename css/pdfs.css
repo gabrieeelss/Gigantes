@@ -37,6 +37,32 @@
   text-decoration: underline;
 }
 
+#pdf-lista-documentos {
+  list-style: none;
+  padding: 0;
+  margin: 2rem;
+  display: flex;
+}
+
+#pdf-lista-documentos li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+  color: white;
+  margin-left: 1.1rem;
+  display: flex;
+  margin-top: 1rem;
+}
+
+#pdf-lista-documentos a {
+  text-decoration: none;
+  color: #ebebeb;
+  
+}
+
+#pdf-lista-documentos a:hover {
+  text-decoration: underline;
+}
+
 .pdf-coluna {
   background: #1e3c64;
   padding: 30px;
@@ -110,4 +136,9 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   align-items: center;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 }

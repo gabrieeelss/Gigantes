@@ -32,8 +32,7 @@
           <ul class="dropdown-menu">
             <li><a href="contabilidade.html">Relatórios Contábeis</a></li>
             <li><a href="prestacaodecontas.html">Prestação de Contas</a></li>
-            <li><a href="ataseestatuto.html">Atas e Estatuto</a></li>
-            <li><a href="certificados.html">Certificados em Geral</a></li>
+            <li><a href="certificados.html">Documentos em Geral</a></li>
           </ul>
         </li>
         <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
@@ -64,8 +63,7 @@
           <ul class="dropdown-menu">
             <li><a href="contabilidade.html">Relatórios Contábeis</a></li>
             <li><a href="prestacaodecontas.html">Prestação de Contas</a></li>
-            <li><a href="ataseestatuto.html">Atas e Estatuto</a></li>
-            <li><a href="certificados.html">Certificados em Geral</a></li>
+            <li><a href="certificados.html">Documentos em Geral</a></li>
           </ul>
         </li>
         <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
@@ -78,17 +76,32 @@
   </header>
 
   <!-- CONTEÚDO PRINCIPAL -->
-<section class="pdf-section">
+
+  <!-- CERTIFICADOS -->
+<section id="pdf-lista-documentos" >
   <div class="pdf-coluna pdf-coluna-certificados">
     <div class="titulo-header">
     <img src="./img/certificado.png" class="titulo-img">
     <h1 class="titulo-header-h1">CERTIFICADOS</h1>
     </div>
-    <ul id="lista-pdfs" class="pdf-lista"></ul>
+    <ul id="lista-pdfs-certificados" class="pdf-lista-documentos"></ul>
+  </div>
+
+<script src="./js/carregar-pdfs-certificados.js"></script>
+
+<!-- ATAS E ESTATUTOS -->
+    <div class="pdf-coluna pdf-coluna-atas">
+      <div class="titulo-header">
+      <img src="./img/documentos.png" class="titulo-img">
+      <h1 class="titulo-header-h1">ATAS E ESTATUTO</h1>
+      </div>
+      <ul id="lista-pdfs-atas" class="pdf-lista-documentos"></ul>
+    </div>
   </div>
 </section>
 
-<script src="./js/carregar-pdfs-certificados.js"></script>
+<script src="./js/carregar-pdfs-atas-e-estatutos.js"></script>
+
 
   <!-- BOTÃO WHATSAPP -->
   <a href="https://wa.me/5519997487329" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
