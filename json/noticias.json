@@ -34,5 +34,29 @@
     "titulo": "Parceria Com Colégio Alamo de Valinhos-SP",
     "imagem": "img/colegioalamo.jpg",
     "conteudo": "Nossa equipe foi agraciada com a doação de materiais esportivo e ferramentas pelo Colégio Álamo de Valinhos-SP.\nFicamos muito felizes e agradecidos pelos recursos e parceria, com toda certeza irão contribuir nos treinos, competições e no dia a dia do Gigantes."
-  } 
+  },
+  {
+    "data": "07/09/2025",
+    "titulo": "Gigantes campeão do Open Hortolandia",
+    "imagem": "img/camp-hortolandia.webp",
+    "conteudo": "Com 210 tries marcados o Gigantes conquistou de forma invicta a 1° edição do Open de Hortolandia, realizado nos dias 6 e 7 de Setembro.\nNossa equipe enfrentou os times da Adeacamp e do Drakkar, ambos duas vezes.\nA equipe aproveitou o evento para aprimorar técnica e se ajustar para o Brasileiro que irá ocorrer em breve."
+  },
+  {
+    "data": "29/08/2025",
+    "titulo": "Gigantes participam da V treinamento com da Seleção Brasileira",
+    "imagem": "img/v-semana-treinamento-2025.png",
+    "conteudo": "Nos dias 22 a 28 de Agosto, ocorreu a V Semana de Treinamento da Seleção Brasileira de Rugby em Cadeira de Rodas, na Andef, em Niteroi/RJ. \nClaro que os Gigantes não ficaram de fora! Fizeram parte da delegação nacional, os seguintes atletas Da esquerda para direita: Rodolfo Giu Alexandre (Japa) Thalys (Pivete) Gabriel (Bebe) Da comissão técnica: Dona marta - Enfermeira Ana - Auxiliar técnica da Seleção Elisom (Gabiru) - Mecânico Renan - Staff Técnico."
+  },
+  {
+    "data": "22/09/2025",
+    "titulo": "Gigantes participa do XVII Campeonato Brasileiro de Rugby em Cadeira de Rodas",
+    "imagem": "img/camp-brasileiro-2025.webp",
+    "conteudo": "No dia 22 de setembro o Gigantes chegou na cidade de São Paulo para participar do XVII Campeonato Brasileiro de Rugby em Cadeira de Rodas, que será realizado nos dias 22 a 28 de setembro.\nNossa equipe está focada e determinada a buscar o título de Campeão Brasileiro.\nContamos com o apoio de todos vocês nessa jornada!"
+  },
+  {
+    "data": "16/04/2025",
+    "titulo": "Nova parceria com a Biel Barber Shop de Valinhos-SP",
+    "imagem": "img/barbearia.png",
+    "conteudo": "O Gigantes firmou uma nova parceria com a Biel Barber Shop de Valinhos-SP.\nA barbearia irá apoiar o time mantendo o corte de cabelo e barba dos integrantes sempre na régua!\nAgradecemos a confiança e o apoio da Biel Barber Shop nessa jornada rumo ao sucesso!"
+  }
 ]
