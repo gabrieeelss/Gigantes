@@ -121,3 +121,33 @@ form button:hover {
 .balao-conteudo h3 {
   color: #004080;
 }
+
+.contatoanonimo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-mensagem-anonima {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    text-decoration: none;
+}
+
+.btn-mensagem-anonima:hover {
+    background-color: #003060;
+}
+
+.contatoanonimo p {
+    font-size: 1rem;
+    color: #333;
+    text-align: justify;
+    max-width: 600px;
+    margin-bottom: 10px;
+}
