@@ -43,6 +43,7 @@
   margin: 2rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #pdf-lista-documentos li {
@@ -105,13 +106,13 @@
 .pdf-coluna-atas {
   width: fit-content;
   max-width: 100%;
-  margin: auto; /* Centraliza o card na página */
+  margin: 1rem;
   margin-top: 1rem;
 }
 .pdf-coluna-certificados {
   width: fit-content;
   max-width: 100%;
-  margin: auto; /* Centraliza o card na página */
+  margin: 1rem;
   margin-top: 1rem;
 }
 
@@ -144,4 +145,9 @@
   .container {
     flex-direction: column;
   }
+}
+
+.pdf-lista-documentos a {
+  white-space: pre-line;
+  display: block;
 }
