@@ -1,4 +1,11 @@
 {
+    "2025": [
+    { "nome": "Balanço Patrimonial 2025 XLS", "arquivo": "balanco-patrimonial-2025.xls" },
+    { "nome": "DRE 2025 XLS", "arquivo": "dre-2025.xls" },
+        { "nome": "Balanço Patrimonial 2025", "arquivo": "balanco-patrimonial-2025.pdf" },
+            { "nome": "DRE 2025", "arquivo": "dre-2025.pdf" },
+            { "nome": "Parecer Conselho Fiscal 2025", "arquivo": "PARECER_CONSELHO_FISCAL_25.pdf"}
+  ],
   "2024": [
     { "nome": "Balanço Patrimonial 2024", "arquivo": "balanco-patrimonial-2024.pdf" },
     { "nome": "DRE 2024", "arquivo": "dre-2024.pdf" }
